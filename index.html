@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/Design.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="/Imagenes/Logo_Alura.png" alt="logo de alura">    
+        </header>
+        <main>
+            <section class="Encript-Space">
+                <div class="Text-Encrypt">
+                    <textarea class="text-area" rows="10" placeholder="Ingrese el texto a utilizar..."></textarea>
+                </div>
+                <div>
+
+                    <p class="informacion">Solo letras minisculas y sin acentos!</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="ActionEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="ActionDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="Result">
+                <div class="Text-Result">
+                    <textarea class="mensaje" rows="10" readonly placeholder="No se digitado ningun texto!"></textarea>
+                </div>
+                <div class="cp-botones">
+                    <button class="btn-copiar" onclick="copy()" onmouseout="HoverMsg()"><span class="CopyText" id="CopyMsg"></span>Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script type="text/javascript" src="/JavaScript/Functions.js"></script>
+    </body>
+</html>
